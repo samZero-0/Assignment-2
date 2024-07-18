@@ -7,8 +7,10 @@
     margin: 0;
     background-color: black;
 }
-
-
+/* 
+html, body {
+    overflow-x: hidden;
+} */
 /* banner styling */
 
 #banner{
@@ -432,17 +434,109 @@
 
 
 
+/* extra mile styling */
 
+#extra-mile{
+     /* border: 2px solid tomato; */
+     width: 100%;
+     /* height:600px; */
+     display: flex;
+     justify-content: center;
+     margin-top: 100px;
+}
+
+.extra-mile-container{
+    /* margin-top: 100px; */
+    width: 80%;
+    /* border: 2px solid tomato; */
+    display: flex;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    
+   
+}
+
+.extra-mile-content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* border: 2px solid tomato; */
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    gap:20px;
+    background: transparent;
+    
+}
+
+.extra-mile-img-container{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    /* border: 2px solid tomato; */
+    padding-top: 50px;
+    padding-bottom:20px;
+    padding-right: 50px;
+    background: transparent;
+    
+}
+.extra-mile-img-container img{
+    border-radius: 20px;
+    background: transparent;
+}
+
+.extra-mile-title-container{
+    width:50%;
+    background: transparent;
+
+}
+.extra-mile-title-container p{
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif; 
+    font-size: 3rem;
+    font-weight: 900;
+    background: transparent;
+    
+}
+.extra-mile-desc-container{
+    width:70%;
+    background: transparent;
+}
+.extra-mile-desc-container p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Inter", sans-serif; 
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    background: transparent;
+    
+}
+.extra-mile-btn-container{
+    margin-top: 50px;
+    background: transparent;
+}
+.extra-mile-btn-container button{
+    width:224px;
+    height: 54px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif; 
+    font-size: 1.2rem;
+    font-weight: 600;
+    border:none;
+    
+}
 
 
 
 
 @media screen and (max-width: 576px){
            
-    .banner-content-container,.content-container, .habits, .habit-card-container{
+    .banner-content-container,.content-container, .habits, .habit-card-container,.extra-mile-img-container, .extra-mile-container{
         flex-direction: column;
     }
-    .content-container,.content-title,.content-desc, .content-btn-container , .banner-img-container,.banner-img-container img, .img-cont, .nav-title, .habit-card-desc,.habit-desc-container{
+    .content-container,.content-title,.content-desc, .content-btn-container , .banner-img-container,.banner-img-container img,  .nav-title, .habit-card-desc,.habit-desc-container, .extra-mile-content,  .extra-mile-title-container,.extra-mile-desc-container, #extra-mile{
         width: 100%;
         
     }
@@ -499,4 +593,33 @@
         margin-top:30px;
         gap:50px;
     }
+
+    .extra-mile-content{
+        padding: 20px;
+        padding-right: 0px;
+    }
+
+   .extra-mile-container{
+    width: 90%;
+    margin-top: 990px;
+    /* border: 2px solid hotpink; */
+    }
+    .extra-mile-btn-container button, .extra-mile-title-container{
+        width: 90%;
+    }
+    .extra-mile-img-container {
+        padding-top: 0px;
+        padding-bottom:0px;
+        padding-left: 0px;
+        width: 80%;
+        
+        
+    }
+    .extra-mile-img-container img{
+        width: 100%;
+        padding-left: 30px;
+        border-radius: 0px;
+        
+    }
+  
 }
