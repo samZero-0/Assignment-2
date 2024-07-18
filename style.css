@@ -43,13 +43,13 @@
     /* align-items: center; */
     margin-top: 2.5rem;
     /* border: 2px solid gold; */
-    width: 90%;
+    width: 100%;
     /* margin-right: 150px; */
     
 }
 .nav-title{
     background: transparent;
-    margin-left: 20px;
+    margin-left: 90px;
     display: flex;
     gap:120px;
     align-items: center;
@@ -80,7 +80,7 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 39px;
     /* gap:30px; */
-    margin-right: 150px;
+    /* margin-right: 150px; */
     
     }
 
@@ -233,10 +233,12 @@
 }
 .img-cont{
     background:transparent;
+    /* border: 2px solid green; */
 }
 
 .img-cont img{
     background:transparent;
+    margin-left: 250px;
 }
 
 .div-video{
@@ -251,7 +253,7 @@
     border-radius: 20px;
     position: absolute;
     top:79%;
-    left:-10%;
+    left:20%;
     
 
 }
@@ -267,8 +269,8 @@
     gap:10px;
     border-radius: 20px;
     position: absolute;
-    top:19%;
-    left:32%;
+    top:17%;
+    left:65%;
     flex-direction: column;
     /* padding-top: 10px; */
 }
@@ -365,9 +367,12 @@
 
     .div-video{
         top:60%;
+        left:-10%;
     }
     .workout{
-        top:30%;
+        top:10%;
+        left:51%;
+
       
         
         
@@ -376,5 +381,8 @@
     .nav-title{
         margin: 0px;
         align-items: left;
+    }
+    .img-cont img{
+        margin-left: 0px;
     }
 }
