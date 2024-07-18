@@ -14,7 +14,7 @@
 #banner{
     /* border: 2px solid tomato; */
     width: 100%;
-    height:1000px;
+    height:900px;
     background: rgb(34,34,34);
     background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(11,11,11,1) 100%);
     display: flex;
@@ -51,7 +51,7 @@
     background: transparent;
     margin-left: 90px;
     display: flex;
-    gap:120px;
+    /* gap:10px; */
     align-items: center;
 
 }
@@ -97,9 +97,10 @@
 }
 .rest-links{
     display: flex;
-    gap: 30px;
+    /* gap: 30px; */
     width: 70%;
     background: transparent;
+    justify-content: space-between;
 }
 
 .Home-nav{
@@ -120,6 +121,10 @@
     position: absolute;
     left:21%;
     top:20%;
+}
+
+.abt{
+    margin-right: 10px;
 }
 
 /* banner-content style */
@@ -334,6 +339,43 @@
     display: none;
     
 }
+
+/* habits section styling */
+
+#habits{
+     /* border: 2px solid tomato; */
+     width: 100%;
+     height:900px;
+     display: flex;
+     justify-content: center;
+}
+
+.habits-container{
+    display: flex;
+    width: 80%;
+    border: 2px solid tomato;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 576px){
            
     .banner-content-container,.content-container{
@@ -372,10 +414,6 @@
     .workout{
         top:10%;
         left:51%;
-
-      
-        
-        
     }   
 
     .nav-title{
