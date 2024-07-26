@@ -831,7 +831,7 @@ html, body {
     flex-direction: column;
     gap:20px;
     width:100%;
-    height: 1000px;
+    height: auto;
     background-color: rgba(36, 36, 36, 0.685);
     /* padding: 10px; */
 
@@ -842,14 +842,15 @@ html, body {
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
-    height:50%;
+    height:auto;
     /* background-color: rgba(36, 36, 36, 0.685); */
     padding: 10px;
+    /* padding-bottom: 0px; */
     /* padding-right: 0px; */
     background: transparent;
     
 }
-.img {
+.img,.img-d {
     width:95%;
     height: 85%;
     /* background-color: rgba(36, 36, 36, 0.685); */
@@ -857,15 +858,15 @@ html, body {
     position: relative;
     
 }
-.img img{
+.img img, .img-d img{
     width: 100%;
     height: 100%; 
-    border-radius: 20px;
+    border-radius: 10px;
     /* background: transparent; */
-    filter:opacity(0.7)
+    filter:opacity(0.6)
 }
 
-.img p{
+.img p, .img-d p{
     color: rgb(255, 255, 255);
     font-family: "Inter", sans-serif; 
     font-size: 2rem;
@@ -882,13 +883,330 @@ html, body {
 }
 
 
-.info{
+.info, .info-rus{
     position: absolute;
     top:70%;
     background:transparent;
+    z-index: 1;
 
 }
 
+/* unique section styling */
+
+.unique-section-title{
+    width: 100%;
+    /* border: 2px solid tomato; */
+    display: flex;
+    justify-content: center;
+}
+.title{
+    width: 50%;
+    /* border: 2px solid tomato; */
+}
+
+.title p{
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif; 
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+
+/* subscription styling */
+
+#subscription{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(36, 36, 36, 0.685);
+    height: 800px;
+    /* border: 2px solid yellow; */
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+.subcription-container{
+    display: flex;
+    width: 80%;
+    /* flex-direction: column; */
+    background: transparent;
+    /* border: 2px solid yellow; */
+    
+}
+
+.subs-money-container{
+    display: flex;
+    width: 50%;
+    background: transparent;
+    /* border: 2px solid rgb(75, 238, 26); */
+    height: 100%;
+}
+
+.subs-text-container{
+    display: flex;
+    width: 50%;
+    background: transparent;
+    /* border: 2px solid rgb(182, 164, 4); */
+    height: 100%;
+    flex-direction: column;
+    gap:20px;
+    justify-content: flex-start;
+}
+
+.subs-header{
+    padding-top: 50px;
+    padding-left: 20px;
+    background: transparent;
+}
+
+.subs-header p{
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif; 
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: left;
+    background: transparent;
+    
+}
+.subs-title , .subs-desc, .subs-points-title, .sub-point-items{
+    background: transparent;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.subs-points{
+    margin-bottom: 30px;
+}
+.subs-title p{
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif; 
+    font-size: 2rem;
+    font-weight: 350;
+    text-align: left;
+    background: transparent;
+}
+
+.subs-desc p{
+    color: rgba(255, 255, 255, 0.563);
+    font-family: "Inter", sans-serif; 
+    font-size: 1.2rem;
+    font-weight: 350;
+    text-align: left;
+    background: transparent;
+}
+
+
+.subs-points-title p{
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif; 
+    font-size: 1.5rem;
+    font-weight: 550;
+    text-align: left;
+    background: transparent;
+}
+
+
+
+.subs-points {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    background: transparent;
+}
+
+.sub-point-items p{
+    color: rgba(255, 255, 255, 0.563);
+    font-family: "Inter", sans-serif; 
+    font-size: 1.2rem;
+    font-weight: 350;
+    text-align: left;
+    background: transparent;
+}
+.sub-point-items p i{
+    background: transparent;
+    color: rgb(230, 83, 60);
+    width: 20px;
+}
+
+
+
+
+
+
+
+.day-pass-card-container{
+    display: flex;
+    width: 50%;
+    background: transparent;
+    /* border: 2px solid rgb(182, 4, 4); */
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.day-pass-card{
+    display: flex;
+    width: 90%;
+    background-color: rgb(54, 53, 53);
+    /* border: 2px solid rgb(182, 4, 4); */
+    height: 70%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    gap:20px;
+
+
+}
+.card-title-day,.card-desc-day{
+    background: transparent;
+}
+
+.card-title-day p{
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif; 
+    font-size: 2rem;
+    font-weight: 550;
+    text-align: left;
+    background: transparent;
+}
+
+.card-desc-day p{
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif; 
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: left;
+    background: transparent;
+    font-style: italic;
+}
+
+
+.month-to-month-card-container{
+    display: flex;
+    width: 50%;
+    background: transparent;
+    /* border: 2px solid rgb(182, 4, 4); */
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.month-card{
+    display: flex;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    /* border: 2px solid rgb(182, 4, 4); */
+    height: 80%;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    padding-top: 50px;
+    gap:20px;
+   
+}
+.card-title, .card-price, .card-desc-month, .card-desc, .desc-items{
+    background: transparent;
+}
+.card-title p{
+    color: rgb(0, 0, 0);
+    font-family: "Inter", sans-serif; 
+    font-size: 2rem;
+    font-weight: 550;
+    text-align: left;
+    background: transparent;
+    
+}
+.card-price p{
+    color: rgb(230, 83, 60);
+    font-family: "Inter", sans-serif; 
+    font-size: 1.6rem;
+    font-weight: 450;
+    text-align: left;
+    background: transparent;
+    
+    
+}
+
+.price{
+    color: rgb(230, 83, 60);
+    font-size: 2.9rem;
+    font-weight: 450;
+    background: transparent;
+
+}
+
+.card-desc-month p{
+    color: rgb(21, 20, 20);
+    font-family: "Inter", sans-serif; 
+    font-size: 1.3rem;
+    font-weight: 350;
+    text-align: left;
+    background: transparent;
+    font-style: italic;
+
+}
+
+.card-desc{
+    gap: 15px;
+    flex-direction: column;
+    display: flex;
+    margin-top:50px;
+}
+
+.desc-items-day{
+    background:transparent
+}
+.desc-items p , .desc-items-day p {
+    color: rgb(21, 20, 20);
+    font-family: "Inter", sans-serif; 
+    font-size: 1.3rem;
+    font-weight: 450;
+    text-align: left;
+    background: transparent;
+
+}
+
+.desc-items-day p{
+    color: rgb(255, 255, 255);
+}
+.desc-items p i, .desc-items-day p i {
+    background: transparent;
+    color: rgb(230, 83, 60)
+
+}
+.desc-items-day p i{
+    color: rgb(127, 127, 127);
+}
+.card-btn, .card-btn-day{
+    margin-top: 100px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    margin-bottom: 20px;
+}
+
+
+.card-btn button, .card-btn-day button{
+    width: 80%;
+    height: 100%;
+    background-color:  rgb(230, 83, 60);
+    font-family: "Inter", sans-serif; 
+    font-size: 1.3rem;
+    font-weight: 450;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+.card-btn-day button{
+    background-color: rgb(255, 249, 249);
+    color: black;
+}
 
 
 /* footer styling */
@@ -1015,7 +1333,7 @@ html, body {
     margin-bottom: 30px;
     margin-top:30px;
 }
-.right-reserve-container P{
+.right-reserve-container p{
     background: transparent;
     color: rgba(255, 255, 255, 0.5);
     font-family: "Inter", sans-serif; 
@@ -1025,12 +1343,30 @@ html, body {
 }
 @media screen and (max-width: 576px){
            
-    .banner-content-container,.content-container, .habits, .habit-card-container,.extra-mile-img-container, .extra-mile-container, #bmi, .bmi-container, .form-third-row-container, #footer, .footer-content-container, .list{
+    .banner-content-container,.content-container, .habits, .habit-card-container,.extra-mile-img-container, .extra-mile-container, #bmi, .bmi-container, .form-third-row-container, #footer, .footer-content-container, .list, #subscription, .subcription-container,.subs-money-container, .day-pass-card-container, .month-to-month-card-container{
         flex-direction: column;
     }
-    .content-container,.content-title,.content-desc, .content-btn-container , .banner-img-container,.banner-img-container img,  .nav-title, .habit-card-desc,.habit-desc-container, .extra-mile-content,  .extra-mile-title-container,.extra-mile-desc-container, #extra-mile , .bmi-title-container, .bmi-desc-container, .bmi-chart, .bmi-calculate ,.bmi-calculate-title, .bmi-calculate-desc, .bmi-calculate-form, .form-first-row-container, .bmi-chart-table table , .bmi-chart-title, .footer-container, .title-desc-container, .get-started-container{
+    .content-container,.content-title,.content-desc, .content-btn-container , .banner-img-container,.banner-img-container img,  .nav-title, .habit-card-desc,.habit-desc-container, .extra-mile-content,  .extra-mile-title-container,.extra-mile-desc-container, #extra-mile , .bmi-title-container, .bmi-desc-container, .bmi-chart, .bmi-calculate ,.bmi-calculate-title, .bmi-calculate-desc, .bmi-calculate-form, .form-first-row-container, .bmi-chart-table table , .bmi-chart-title, .footer-container, .title-desc-container, .get-started-container, .subs-money-container,  .subcription-container,.subs-text-container, .day-pass-card-container, .month-to-month-card-container{
         width: 100%;
         
+    }
+    .get-started-container h3{
+       font-size: 1.8rem;
+       padding-left:20px ;
+    }
+    #subscription{
+        height: auto;
+        margin-top:50px;
+        margin-bottom:-750px;
+        width: 100%;
+    }
+
+    .month-to-month-card-container{
+        margin-top: 50px;
+    }
+
+    .subcription-container{
+        flex-direction: column-reverse;
     }
     .habit-card-img-container,.habit-card-desc{
         width: 65%;
@@ -1154,7 +1490,6 @@ html, body {
 
     .row-1{
             grid-template-columns: repeat(1,1fr);
-            /* height:auto; */
     }
 
     .team-card-container , .footer-content-container{
@@ -1165,4 +1500,37 @@ html, body {
         height: auto;
         margin-top: 750px;
     }
+  
+    .subs-money-container{
+        flex-direction: column-reverse;
+    }
+
+    .list ul li{
+        font-size: 1.5rem;
+    }
+    .list{
+        margin-bottom: 20px;
+    }
+    .right-reserve-container p{
+        font-size: 1.2rem;
+    }
+
+    .unique-section-title{
+        margin-top: 800px;
+    }
+    /* .info-rus{
+
+        top:50%;
+    } */
+
+    .img-d{
+        display: none;
+    }
+    .img p{font-size: 1.6rem;
+
+    }
+    .footer-title-container, .footer-desc{
+        padding-left: 20px;
+    }
+   
 }
